@@ -1,0 +1,8 @@
+<view class='form'>
+  <form bindsubmit="formSubmit">
+    <input value="{{user.name}}" name="name" placeholder="姓名" />
+    <input type="number" name="tel" value="{{user.tel}}" placeholder="电话号码" />
+    <input name="abs" value="{{user.abs}}" placeholder="详细地址" />
+    <button form-type="submit">保存</button>
+  </form>
+</view>

@@ -1,0 +1,37 @@
+<view class='cartList'>
+  <view class='cartList-item' wx:for="{{goods}}" wx:key="{{id}}">
+    <checkbox-group bindchange="onlyChoose" data-index="{{index}}">
+         <checkbox checked="{{item.selected}}"></checkbox> 
+    </checkbox-group>
+    <image src='{{item.src}}'></image>
+    <view class='cartList-goods'>
+      <text class='cartList-title'>{{item.title}}</text>
+      <view class='cartLizt-subadd'>
+        <text class='sub' bindtap='sub' data-index='{{index}}'> - </text>
+        <text class='hoodsnum'> {{item.num}} </text>
+        <text class='add' bindtap='add' data-index='{{index}}'> + </text>
+      </view>
+    </view>
+    <view class='cartList-price'>
+      <text>¥ {{item.unit}}</text>
+      <text bindtap='delect' data-index='{{index}}'> × </text>
+    </view>
+  </view>
+</view>
+<view class='bottom'>
+  <view class='allchoose'>
+    <checkbox-group bindchange="allChoose">
+      <checkbox class='all' value='{{allChoose}}' checked="{{allChoose}}">全选</checkbox>
+    </checkbox-group>   
+  </view>
+  <view class='allprice'>
+    <text>¥ {{totalPrice}}</text>
+    <navigator class='arrow-right' url='/pages/order/order'>
+      <image src='/images/icon3.png'></image>
+    </navigator>
+    
+  </view>
+</view>
+<view class='nullCart' wx:if="{{hasList}}">
+  购物车还是空的呢！！！
+</view>

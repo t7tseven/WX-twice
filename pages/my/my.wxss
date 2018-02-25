@@ -1,0 +1,83 @@
+.aboutMe{
+  width: 100%;
+  height: 120rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  font-size: 16px;
+  color: #fff;
+  background: #ab956d;
+}
+.me image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.Item{
+  padding: 0 20rpx;
+}
+.item,
+.address,
+.bianhao{
+  width: 100%;
+  height: 80rpx;
+  line-height:80rpx;
+  font-size: 14px;
+  border-bottom: 2rpx solid #eee;
+  color: #adadad;
+}
+.item:last-child{
+  border-bottom:0;
+}
+.address{
+    text-align: center;
+    position: relative;
+}
+.little-main{
+  display: flex;
+  border-bottom: 2rpx solid #eee;
+  height: 200rpx;
+  padding: 20rpx;
+  position: relative;
+}
+.little-main image{
+  height: 200rpx;
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+.shopHoods-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */
+  line-height: 80rpx;
+  color: #adadad;
+  font-size: 16px;
+}
+.pay{
+  position: absolute;
+  top: 90rpx;
+  right: 20rpx;
+  color: #e00;
+  font-size: 16px;
+}
+.orders-footer{
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #adadad;
+    font-size: 16px;
+    padding:15rpx 30rpx;
+}
+.orders-footer .orders-btn{
+    float: right;
+    width: 170rpx;
+    height: 60rpx;
+    line-height:60rpx;
+    border-radius: 6rpx;
+    background: #b42f2d;
+    color: #fff;
+}

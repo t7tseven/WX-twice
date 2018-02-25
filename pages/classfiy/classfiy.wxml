@@ -1,0 +1,20 @@
+<view class="container">
+  <!--左侧栏-->
+  <view class="navLeft">
+    <view class="left-item {{curNav == item.cate_id ? 'on':''}}" wx:for="{{cateItems}}" wx:key="{{id}}" data-id='{{item.cate_id}}' data-index='{{index}}' bindtap='switchChoose'>{{item.cate_name}}</view>
+  </view>
+  <!--右侧栏-->
+  <view class='navRight'>
+  <image src='/images/c1.png' class='navRight-img' mode='fillAspect'></image>
+  <text class='navRight-title'>{{cateItems[curIndex].cate_name}}</text>
+    <view class='hasData' wx:if="{{cateItems[curIndex].ishaveChild}}">
+      <block wx:for="{{cateItems[curIndex].children}}" wx:key="{{id}}">
+        <navigator class='right-item'>
+          <image src='{{item.image}}'></image>
+          <text>{{item.name}}</text>
+        </navigator>
+      </block>
+    </view>
+     <view class='noData' wx:else>该分类暂时无数据</view> 
+  </view>
+</view>

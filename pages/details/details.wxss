@@ -1,0 +1,139 @@
+.details{
+  padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.details-img{
+  width: 300rpx;
+  height: 300rpx;
+  margin-bottom: 100rpx;
+}
+.details-cart{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 14px;
+  background-color: #ab956d;
+  border-radius: 50rpx;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40rpx;
+  position: relative;
+}
+.details-addcart,
+.add-to-cart{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-top: -14rpx;
+}
+.add-to-cart{
+  position:absolute;
+  top: -400rpx;
+  right: 50rpx; 
+  opacity: .6;
+  border-radius: 50%;
+   animation: to_cart .3s ease-out;
+  -webkit-animation: to_cart .3s ease-out; 
+}
+@-webkit-keyframes to_cart {
+    0%{
+        right:50rpx;
+        top:50rpx;
+    }
+}
+@keyframes to_cart {
+    0%{
+        right:50rpx;
+        top:50rpx;
+    }
+} 
+.sub, 
+.details-num,
+.add,
+.addCart{
+   margin-right: 60rpx; 
+}
+.details-hoods{
+  font-size: 12px;
+}
+.details-hoods,
+.details-title,
+.details-price{
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #666;
+}
+.swiper-tab{
+  width: 100%;
+  border-bottom: 2rpx solid #ededed;
+}
+.swiper-tab-item{
+  width: 33.33%;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #c7c7c7;
+}
+.on{
+  color: #ab956d;
+  border-bottom: 5rpx solid #ab956d;
+}
+.cartUrl{
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+}
+.cartUrl image{
+  width: 100%;
+  height: 100%;
+}
+.cartUrl.scale{
+    -webkit-animation: to_cart_scale .3s ease;
+    animation: to_cart_scale .3s ease;
+}
+@-webkit-keyframes to_cart_scale {
+    50%{
+        -webkit-transform: scale(1.2);
+    }
+}
+@keyframes to_cart_scale {
+    50%{
+        transform: scale(1.2);
+    }
+}
+.cartNum{
+  color: white;
+  font-size: 12px;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  background-color: #ab956d;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 50rpx;
+}
+.swiper-box{ 
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden; 
+} 
+.swiper-box view{ 
+  text-align: center; 
+} 
+.swiper-box-item{
+  padding: 20rpx;
+}
+.swiper-box-item image{
+  width: 100%;
+  height: 600rpx;
+}

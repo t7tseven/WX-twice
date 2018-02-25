@@ -1,0 +1,12 @@
+.form{
+  padding: 20rpx;
+}
+input{
+  border-bottom: 2rpx solid #ddd;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 16px;
+}
+button{
+  margin-top: 20rpx;
+}

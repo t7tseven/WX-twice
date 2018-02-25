@@ -1,0 +1,40 @@
+<view class="details">
+  <image src='{{newgoods.src}}' class='details-img'></image>
+  <navigator open-type="switchTab" url='/pages/cart/cart'>
+    <view class='cartUrl {{hasCartNum?"scale":""}}'>
+      <image src='/images/cart2.png' mode='aspectFill'></image>
+      <text class='cartNum' wx:if="{{show}}">{{cartNum}}</text>
+    </view>
+  </navigator>
+  <view class='details-cart'>
+    <text class='sub' bindtap="numSub"> - </text>
+    <text class='details-num'>数量 {{num}}</text>
+    <text class='add' bindtap="numAdd"> + </text>
+    <text class='addCart' bindtap='translate'>加入购物车</text>
+    <image src='/images/cart1.png' class='details-addcart' bindtap='translate'></image>
+    <image src='/images/cart1.png' class='add-to-cart' wx:if="{{cartShow}}" ></image>
+  </view>
+  <text class='details-hoods'>{{newgoods.hoods}}</text>
+  <text class='details-title'>{{newgoods.title}}</text>
+  <text class='details-price'>¥ {{newgoods.price}}</text>
+</view>
+<view class='devision'></view>
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="bindTap">商品详情</view>
+  <view class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="bindTap">产品参数</view>
+  <view class="swiper-tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="bindTap">售后保障</view>
+</view>
+<swiper  class="swiper-box" current="{{currentTab}}" duration="300" bindchange="bindChange" style="height:{{winHeight - 80}}px">
+  <swiper-item>
+    <view class='swiper-box-item'>
+    <image src='{{newgoods.src}}'></image>
+    <text>{{newgoods.details}}</text>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='swiper-box-item'>{{newgoods.parameter}}</view>
+  </swiper-item>
+  <swiper-item>
+    <view class='swiper-box-item'>{{newgoods.service}}</view>
+  </swiper-item>
+</swiper>

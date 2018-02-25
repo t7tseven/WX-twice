@@ -1,0 +1,35 @@
+<view class='swiper'>
+  <swiper indicator-dots autoplay circular interval="5000" duration="1000" indicator-active-color='#fff'>
+    <swiper-item wx:for="{{swiperList}}" wx:key="{{id}}">
+      <image src="{{item.src}}" width="375" height="150" mode='aspectFill' />
+    </swiper-item>
+  </swiper>
+</view>
+<view class='split'>
+  <text>精选主题</text>
+</view>
+<view class='title'>
+  <navigator class='title-item'>
+    <image src='/images/s1.png' mode='aspectFill'></image>
+  </navigator>
+  <navigator class='title-item'>
+    <image src='/images/s2.png' mode='aspectFill'></image>
+  </navigator>
+</view>
+<view class='title2'>
+  <navigator class='title2-item'>
+  <image src='/images/s3.png' mode='aspectFill'></image>
+  </navigator>
+</view>
+<view class='split'>
+  <text>最近新品</text>
+</view>
+<view class='shop'>
+  <block wx:for="{{shopList}}" wx:key="id">
+    <navigator class='shop-item' url='/pages/details/details?id={{item.id}}'>
+      <image src='{{item.src}}'></image>
+      <text class='shop-title'>{{item.title}} 100g</text>
+      <text class='shop-sprice'>¥ {{item.price}}</text>
+    </navigator>
+  </block>
+</view>

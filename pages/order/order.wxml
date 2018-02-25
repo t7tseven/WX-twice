@@ -1,0 +1,34 @@
+<navigator url='/pages/addaddress/addaddress'>
+  <view class='addAddress' wx:if="{{!hasUser}}">添加收货地址</view>
+  <view class='user' wx:else>
+    <text>收货人： {{user.name}}</text>
+    <text>联系电话： {{user.tel}}</text>
+    <text>收货地址：{{user.abs}}</text>
+  </view>
+  <view class="arrow" wx:if="{{!hasUser}}"></view>
+</navigator>
+<view class="devision"></view>
+<view class="cartList">
+  <view class="cartList-item">
+    <image src='/images/s6.png'></image>
+    <view class='cartList-details'>
+      <text class='title'>素米 500g</text>
+      <text class='price'>¥ 0.03</text>
+      <text class='num'>×4</text>
+    </view>
+  </view>
+  <view class="cartList-item">
+    <image src='/images/s5.png'></image>
+    <view class='cartList-details'>
+      <text class='title'>新鲜芹菜 500g</text>
+      <text class='price'>¥ 0.01</text>
+      <text class='num'>×1</text>
+    </view>
+  </view>
+</view>
+<view class='pay'>
+  <text>付款合计： ¥0.13</text>
+  <view class='gopay' bindtap='gopay'>
+    去支付
+  </view>
+</view>

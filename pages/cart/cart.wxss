@@ -1,0 +1,85 @@
+checkbox .wx-checkbox-input{
+  border-radius: 50%;
+  margin-top: 60rpx;
+  margin-right: 20rpx;
+}
+.allchoose checkbox.all .wx-checkbox-input{
+  margin-top:0;
+  width: 40rpx;
+  height: 40rpx;
+  background-color: #ab956d;
+  border-color: #fff;
+}
+checkbox.all .wx-checkbox-input.wx-checkbox-input-checked{
+  border: 2rpx solid #fff;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  background: red;
+  color: #000;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx;
+   color:#fff;
+    transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1); 
+}
+.cartLizt-subadd{
+  width: 250rpx;
+  display: flex;
+}
+.sub,
+.add,
+.hoodsnum{
+  width: 33.333%;
+}
+.cartList-goods,
+.cartList-price{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.cartList-goods{
+  margin-right: 100rpx;
+}
+.bottom{
+  width: 100%;
+  height: 80rpx;
+  background-color: #ab956d;
+  position: absolute;
+   bottom: 0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx; 
+  color: #fff;
+  font-size: 16px;
+}
+.bottom .arrow-right{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx; 
+  margin-right: 40rpx; 
+
+}
+.allprice{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-right image{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.nullCart{
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}

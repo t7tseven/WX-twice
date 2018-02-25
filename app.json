@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/classfiy/classfiy",
+    "pages/cart/cart",
+    "pages/my/my",
+    "pages/details/details",
+    "pages/order/order",
+    "pages/addaddress/addaddress"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#aa976c",
+    "navigationBarTitleText": "生鲜小店",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#ab956d",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/12.png",
+      "selectedIconPath": "/images/11.png"
+    },
+    {
+      "pagePath": "pages/classfiy/classfiy",
+      "text": "分类",
+      "iconPath": "/images/22.png",
+      "selectedIconPath": "/images/21.png"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
+      "iconPath": "/images/32.png",
+      "selectedIconPath": "/images/31.png"
+    },{
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "/images/42.png",
+      "selectedIconPath": "/images/41.png"
+    }
+    ]
+  }
+
+}

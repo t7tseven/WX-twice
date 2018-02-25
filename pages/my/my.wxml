@@ -1,0 +1,37 @@
+<view class="aboutMe">
+  <view class='me'>
+    <image src='{{avatarUrl}}'></image>
+    <text>{{nickName}}</text>
+  </view>
+  <view class='about'>关于我们</view>
+</view>
+<view class='addressList'>
+  <view class='addressList-item'>
+    <navigator class='address' url='/pages/addaddress/addaddress'>
+      地址管理
+      <view class='arrow'></view>
+    </navigator>
+    <view class='Item' wx:if='{{hasAddress}}'>
+      <view class='item'>{{address.name}}</view>
+      <view class='item'>{{address.tel}}</view>
+      <view class='item'>{{address.abs}}</view>
+    </view>
+  </view>
+</view>
+<view class='devision'></view>
+<view class='address'>我的订单</view>
+<view class='shopHoods' wx:for="{{order}}" wx:key='{{item}}'>
+  <view class='bianhao'>订单编号：{{item.number}}</view>
+  <view class='little-main'>
+    <image src='{{item.thumb}}'></image>
+    <view class='shopHoods-title'>
+      <text>{{item.name}}</text>
+      <text>{{item.count}}个</text>
+    </view>
+    <text class='pay'>{{item.status}}</text>
+  </view>
+  <view class="orders-footer">
+    <text>实付：￥{{item.money}}</text>
+    <button size="mini" class="orders-btn" bindtap="payOrders">付款</button>
+  </view>
+</view>

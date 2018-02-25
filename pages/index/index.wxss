@@ -1,0 +1,69 @@
+swiper{
+  height: 420rpx;
+}
+.swiper image{
+  width: 100%;
+  height: 420rpx;
+}
+.split{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 16px;
+  color: #aa976c;
+  font-weight: bold;
+}
+.title{
+  height: 370rpx;
+  overflow: hidden;
+  margin-bottom: 10rpx;
+  box-sizing: border-box;
+}
+.title .title-item{
+  width: 49%;
+  display: inline-block;
+  height: 370rpx;
+  margin-right: 2%;
+}
+.title .title-item:nth-child(2n){
+  margin-right: 0;
+}
+.title-item image{
+  width: 100%;
+  height: 100%;
+}
+.title2{ 
+  overflow: hidden;
+  height: 370rpx;
+}
+.title2 image{
+  width: 100%;
+  height: 370rpx;
+}
+.shop{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40rpx;
+}
+.shop-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 49%;
+  background-color: #f6f5f6;
+  border-radius: 20rpx;
+  font-size: 16px;
+  padding: 30rpx; 
+  box-sizing: border-box;
+  margin-right: 2%; 
+  margin-bottom: 20rpx;
+}
+.shop-item:nth-child(2n){
+  margin-right: 0rpx;
+}
+.shop-item image{
+  width: 180rpx;
+  height: 180rpx;
+  margin-bottom: 20rpx;
+}
